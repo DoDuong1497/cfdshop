@@ -10,6 +10,7 @@ const FooterTop = () => {
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
+
             <div className="footerTop-col">
                 <h4 className="heading --h4">Connections</h4>
                 <ul className="footerTop-list">
@@ -20,6 +21,7 @@ const FooterTop = () => {
                     <li><a href="#">LinkedIn</a></li>
                 </ul>
             </div>
+
             <div className="footerTop-col">
                 <h4 className="heading --h4">Earnings</h4>
                 <ul className="footerTop-list">
@@ -28,6 +30,7 @@ const FooterTop = () => {
                     <li><a href="#">Sell on Market</a></li>
                 </ul>
             </div>
+            
             <div className="footerTop-col">
                 <h4 className="heading --h4">Account</h4>
                 <ul className="footerTop-list">
