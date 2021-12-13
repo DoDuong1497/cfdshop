@@ -16,7 +16,7 @@ body {
     width: 100%;
     max-width: $container-max-width;
     margin: auto;
-    @include text(var(--body16-fs), 'or', var(--body16-lh), $c1-a, none); // tuỳ chỉnh
+    @include text(var(--body14-fs), or, var(--body14-lh), $c1-a, none); // tuỳ chỉnh
     background: $c1-h;
     position: relative;
     .container-fluid {
