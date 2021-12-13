@@ -3,7 +3,6 @@
 .header__top{
     display: flex;
     justify-content: space-between;
-    font-family: 'OS';
     padding: 16px 0;
     font-size: var(--body12-fs);
     line-height: var(--body12-lh);
@@ -37,8 +36,7 @@
             align-items: center;
             position: relative;
             p{
-                font-family: Poppins;
-                font-weight: bold;
+                font-family: 'pb';
                 font-size: var(--h5-fz);
                 line-height: 22px;
                 margin-right: 8px;
@@ -58,7 +56,7 @@
             align-items: center;
             gap: 12px;
             input{
-                font-family: 'OS';
+                font-family: 'or';
                 font-size: var(--body14-fs);
                 line-height: var(--body14-lh);
                 color: $c1-c;
@@ -86,8 +84,7 @@
                 left: -2px; 
                 p{
                 text-align: center;
-                font-family: Poppins;
-                font-weight: 600;
+                font-family: 'ps';
                 font-size: 12px;
                 line-height: 18px;
                 color: $c1-j;
@@ -108,7 +105,7 @@
                 padding: 16px 0;
                 gap: 2px;
                 p{
-                    font-weight: 500;
+                    font-family: 'ps';
                     font-size: var(--body15-fs);
                     line-height: var(--body15-lh);
                 }
