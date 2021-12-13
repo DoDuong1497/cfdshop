@@ -1,5 +1,4 @@
 import HeaderMain from './headermain'
-import HeaderNav from './headernav'
 import HeaderTop from './headertop'
 import './style.scss'
 
@@ -10,7 +9,6 @@ export default function index() {
             <HeaderTop />
             <HeaderMain />
         </div>
-            <HeaderNav />
         </>
     )
 }
