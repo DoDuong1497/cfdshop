@@ -1,7 +1,7 @@
 
 import FooterTop from "./FooterTop";
 import ProductTag from "./ProductTag";
-import "../../assets/css/style.scss";
+
 import "./style.scss";
 
 const Footer = () => {
