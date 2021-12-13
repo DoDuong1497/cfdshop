@@ -24,11 +24,13 @@ $green-cl: #6A983C;
 $yellow-cl: #D0A866;
 $blue-cl: #37D0D6;
 
-// $gradient-cl: linear-gradient(180deg, #df1cff 0%, #814bf6 50.55%, #00bcff 100%);
+
+
+$gradient-cl: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 
 // timing transition - tuỳ chỉnh
 $t: 0.4s;
-// $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
 // ========================================CÁC BIẾN CÓ THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE=====================================
 
