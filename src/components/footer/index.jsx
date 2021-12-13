@@ -1,4 +1,3 @@
-
 import FooterTop from "./FooterTop";
 import ProductTag from "./ProductTag";
 
