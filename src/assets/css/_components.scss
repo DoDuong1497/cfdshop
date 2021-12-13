@@ -70,7 +70,8 @@ article {
         margin: 0 0 1.5rem 0;
     }
     h6 {
-        font-size: 0.67rem;
+        font-size: var(--h5-fs);
+        line-height: var(--h5-lh);
         margin: 0 0 1.67rem 0;
     }
 
@@ -114,7 +115,7 @@ article {
 }
 
 .heading {
-    font-family: ib;
+    font-family: ps;
     &.--h1 {
         font-size: var(--h1-fs);
         line-height: var(--h1-lh);
@@ -122,5 +123,22 @@ article {
     &.--h2 {
         font-size: var(--h2-fs);
         line-height: var(--h2-lh);
+    }
+    &.--h3 {
+        font-size: var(--h3-fs);
+        line-height: var(--h3-lh);
+    }
+    &.--h4 {
+        font-size: var(--h4-fs);
+        line-height: var(--h4-lh);
+    }
+    &.--h5 {
+        font-family: pm;
+        font-size: var(--h5-fs);
+        line-height: var(--h5-lh);
+    }
+    &.--h6 {
+        font-size: var(--h6-fs);
+        line-height: var(--h6-lh);
     }
 }
