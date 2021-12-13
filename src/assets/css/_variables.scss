@@ -26,7 +26,7 @@ $c1-e:#EBEBEB;
 $c1-f:#F5F5F5;
 $c1-g:#F9F9F9;
 $c1-h:#FFFFFF;
-$c1-i:#FDFDFD;
+$c1-j:#FDFDFD;
 
 $c2-a:#6A983C;
 $c2-b:#46760A;
@@ -67,26 +67,32 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
     // font-size & line-height heading
 
-    --h1-fs: 7.2rem;
-    --h1-lh: 8rem;
+    --h1-fs: 3.2rem;
+    --h1-lh: 1;
 
-    --h2-fs: 5.2rem;
-    --h2-lh: 6rem;
+    --h2-fs: 2.6rem;
+    --h2-lh: 1;
 
-    --h3-fs: 3.2rem;
-    --h3-lh: 4.2rem;
+    --h3-fs: 2.2rem;
+    --h3-lh: 1;
 
-    --h4-fs: 2.4rem;
-    --h4-lh: 3.2rem;
+    --h4-fs: 1.8rem;
+    --h4-lh: 1;
 
-    --h5-fs: 2rem;
-    --h5-lh: 3rem;
+    --h5-fs: 1.5rem;
+    --h5-lh: 1;
 
-    --body16-fs: 1.6rem;
-    --body16-lh: 2.6rem;
+    --h6-fs: 1.2rem;
+    --h6-lh: 1;
+
+    --body15-fs: 1.5rem;
+    --body15-lh: 2.25rem;
 
     --body14-fs: 1.4rem;
-    --body14-lh: 2.2rem;
+    --body14-lh: 1.9rem;
+
+    --body12-fs: 1.2rem;
+    --body12-lh: 1.634rem;
 
     // Genaral Variable
 

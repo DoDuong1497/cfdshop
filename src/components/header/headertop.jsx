@@ -1,6 +1,7 @@
-import './style.scss'
+import React from 'react'
 
-export default function headertop() {
+
+export default function HeaderTop() {
     return (
         <div className="header__top">
             <div className="header__top-left">
@@ -9,9 +10,9 @@ export default function headertop() {
             <p className="top-left__email">info@freshnesecom.com</p>
             </div>
             <div className="header__top-right">
-            <a href="#" className="top-right__blog">Chat with us</a>
-            <a href="#" className="top-right__aboutus">Chat with us</a>
-            <a href="#" className="top-right__carrers">Chat with us</a>
+            <a href="#" className="top-right__blog">Blog</a>
+            <a href="#" className="top-right__aboutus">About Us</a>
+            <a href="#" className="top-right__carrers">Careers</a>
             </div>
         </div>
     )
