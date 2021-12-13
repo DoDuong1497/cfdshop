@@ -1,7 +1,7 @@
 //======================================================BOXED LAYOUT=======================================================
 
 $container-max-width: 100%;
-$container-width: 1260px; // tùy thuộc vào container của bản thiết kế // $container-width = container (đo từ bản thiết kế) + 30px
+$container-width: 1200px; // tùy thuộc vào container của bản thiết kế // $container-width = container (đo từ bản thiết kế) + 30px
 
 /*GRID - media queries breakpoints*/
 $xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
@@ -18,11 +18,39 @@ $lg-max: ($lg-min - 1); // Large Desktop
 
 //=====================================CÁC BIẾN KHÔNG THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE======================================
 // colors - tuỳ chỉnh
-$white-cl: #fff;
-$black-cl: #151515;
-$green-cl: #6A983C;
-$yellow-cl: #D0A866;
-$blue-cl: #37D0D6;
+$c1-a:#151515;
+$c1-b:#575757;
+$c1-c:#A9A9A9;
+$c1-d:#D1D1D1;
+$c1-e:#EBEBEB;
+$c1-f:#F5F5F5;
+$c1-g:#F9F9F9;
+$c1-h:#FFFFFF;
+$c1-j:#FDFDFD;
+
+$c2-a:#6A983C;
+$c2-b:#46760A;
+$c2-c:#92C064;
+$c2-d:#C8DEB3;
+$c2-e:#F4F8EC;
+
+$c3-a:#D0A866;
+$c3-b:#B28A48;
+$c3-c:#ECD2A6;
+$c3-d:#FAEDD8;
+$c3-e:#FFF9F0;
+
+$c4-a:#E6704B;
+$c4-b:#C7522D;
+$c4-c:#EB8D70;
+$c4-d:#F7C6B7;
+$c4-e:#FFF1ED;
+
+$c5-a:#37D0D6;
+$c5-b:#19B2B8;
+$c5-c:#7CD0D3;
+$c5-d:#B9E6E8;
+$c5-e:#ECF6F7;
 
 
 
@@ -57,12 +85,18 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
     --h6-fs: 1.2rem;
     --h6-lh: 1;
 
-    --body14-fs: 1.6rem;
+    --body15-fs: 1.5rem;
+    --body15-lh: 2.25rem;
+
+    --body14-fs: 1.4rem;
     --body14-lh: 1.9rem;
+
+    --body12-fs: 1.2rem;
+    --body12-lh: 1.634rem;
 
     // Genaral Variable
 
-    --gap: 90px; // gap này sử dụng cho gap cột & padding của container, container-fluid
+    --gap: 30px; // gap này sử dụng cho gap cột & padding của container, container-fluid
 
     --height-header: 80px;
     --height-button: 56px;
