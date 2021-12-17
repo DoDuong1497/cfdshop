@@ -1,0 +1,74 @@
+@import '../../assets/css/style.scss';
+
+button{
+    --width: 76px;
+    --height: 36px;
+    font-family: 'pb' !important;
+    font-size: var(--body15-fs);
+    line-height: var(--body15-lh);
+    width: var(--width);
+    height: var(--height);
+    background: $c1-j;
+    color: $c1-a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: none;
+
+
+    &.type-icon-left,
+    .type-icon-right{
+        --width:98px;
+    }
+    &.type-icon-right{
+        svg{
+            transform: rotate(-90deg);
+        }
+    }
+    &.type-icon-left{
+        transform: rotate(90deg);
+    }
+
+
+    &.size-medium{
+        --width:84px;
+        --height:48px;
+        &.type-icon-left,
+        .type-icon-right{
+            --width:106px;
+        }
+    }
+
+    &.size-large{
+        --width:148px;
+        --height:56px;
+        &.type-icon-left,
+        .type-icon-right{
+            --width:170px;
+        }
+    }
+    
+    &.color-bright{
+        background-color: $c1-f;
+        svg{
+            fill: $c1-a;
+        }
+    }
+    &.color-colored{
+        background-color: $c2-a;
+        border: 2px solid $c2-b;
+        color: $c1-j;
+        svg{
+            fill: $c1-j;
+        }
+    }
+
+    &.color-stroke{
+        border: 2px solid $c2-c;
+        svg{
+            fill: $c2-b;
+        }
+    }
+}
