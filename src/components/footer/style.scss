@@ -17,6 +17,7 @@
         li{
             margin-bottom: 1.6rem;
             a{
+                @include body-d;
                 color: $c2-a;
             }
         }
