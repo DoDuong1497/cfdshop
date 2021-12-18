@@ -27,8 +27,6 @@ export const BrandName = () => {
     )
 }
 
-
-
  
 
 
