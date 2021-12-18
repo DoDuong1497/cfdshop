@@ -11,8 +11,12 @@
         margin-bottom: 48px;
     }
     li{
-        color: $c2-a;
         margin-top: 12px;
-        text-decoration: underline;
+        a{
+            color: $c2-a;
+            font-size: var(--body14-fs);
+            line-height: 1.907rem;
+            text-decoration: underline;
+        }
     }
 }

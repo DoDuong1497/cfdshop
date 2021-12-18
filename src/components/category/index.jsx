@@ -3,10 +3,10 @@ import Button from '../button'
 import { ArrowDown } from '../icon'
 import './style.scss'
 
-export default function BasicCategory({header}) {
+export default function Category({header}) {
     const caterogyItem = [
         {
-            name: 'category Item'
+            name: 'Category Item'
         }
     ]
     return (
@@ -14,19 +14,19 @@ export default function BasicCategory({header}) {
             <h4 className='category__header'>{header}</h4>
             <ul>
                 <li>
-                    {caterogyItem.map(item => item.name)}
+                    <a href="">{caterogyItem.map(item => item.name)}</a>
                 </li>
                 <li>
-                    {caterogyItem.map(item => item.name)}
+                    <a href="">{caterogyItem.map(item => item.name)}</a>
                 </li>
                 <li>
-                    {caterogyItem.map(item => item.name)}
+                    <a href="">{caterogyItem.map(item => item.name)}</a>
                 </li>
                 <li>
-                    {caterogyItem.map(item => item.name)}
+                    <a href="">{caterogyItem.map(item => item.name)}</a>
                 </li>
                 <li>
-                    {caterogyItem.map(item => item.name)}
+                    <a href="">{caterogyItem.map(item => item.name)}</a>
                 </li>
             </ul>
             <Button color='bright' size='medium' type='icon-right' icon={<ArrowDown size='12'/>}>Button</Button>
