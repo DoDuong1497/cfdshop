@@ -2,7 +2,7 @@ import HeaderMain from './headermain'
 import HeaderTop from './headertop'
 import './style.scss'
 
-export default function index() {
+export default function Header() {
     return (
         <>
         <div className='container'>

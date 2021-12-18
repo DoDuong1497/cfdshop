@@ -1,17 +1,14 @@
 import "./assets/css/style.scss";
-import Category from "./components/category";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Nav from "./components/nav";
+import MainLayout from "./layout/mainlayout";
+import Home from "./pages/home";
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Nav />
-      <Category header='header'></Category>
-      <Footer />
+      <MainLayout>
+        <Home/>
+      </MainLayout>
     </div>
   );
 }
