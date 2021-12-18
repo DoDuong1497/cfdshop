@@ -3,7 +3,7 @@ import Button from '../button'
 import { ArrowDown } from '../icon'
 import './style.scss'
 
-export default function Category({header}) {
+export default function Category({header, button}) {
     const caterogyItem = [
         {
             name: 'Category Item'
@@ -29,7 +29,9 @@ export default function Category({header}) {
                     <a href="">{caterogyItem.map(item => item.name)}</a>
                 </li>
             </ul>
-            <Button color='bright' size='medium' type='icon-right' icon={<ArrowDown size='12'/>}>Button</Button>
+            <Button color='bright' size='medium' type='icon-right' icon={<ArrowDown size='12'/>}>
+                {button}
+            </Button>
         </div>
     )
 }

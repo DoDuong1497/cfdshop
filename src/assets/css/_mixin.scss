@@ -203,3 +203,57 @@
 		background: $bgThumb;
 	}
 }
+
+@mixin s1{
+	font-family: 'ps';
+	font-size: var(--h1-fs);
+	line-height: var(--h1-lh);
+}
+
+@mixin s2{
+	font-family: 'ps';
+	font-size: var(--h2-fs);
+	line-height: var(--h2-lh);
+}
+
+@mixin s3{
+	font-family: 'ps';
+	font-size: var(--h3-fs);
+	line-height: var(--h3-lh);
+}
+
+@mixin s4{
+	font-family: 'ps';
+	font-size: var(--h4-fs);
+	line-height: var(--h4-lh);
+}
+
+@mixin s5{
+	font-family: 'ps';
+	font-size: var(--h5-fs);
+	line-height: var(--h5-lh);
+}
+
+@mixin s6{
+	font-family: 'ps';
+	font-size: var(--h6-fs);
+	line-height: var(--h6-lh);
+}
+
+@mixin lead-d{
+	font-family: 'or';
+	font-size: var(--body17-fs);
+	line-height: var(--body17-lh);
+}
+
+@mixin body-d{
+	font-family: 'or';
+	font-size: var(--body14-fs);
+	line-height: var(--body14-lh);
+}
+
+@mixin cap-d{
+	font-family: 'or';
+	font-size: var(--body12-fs);
+	line-height: var(--body12-lh);
+}

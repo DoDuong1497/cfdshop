@@ -1,13 +1,10 @@
 @import '../../assets/css/style.scss';
 
-button{
-    --width: 76px;
-    --height: 36px;
+button.button{
     font-family: 'pb' !important;
     font-size: var(--body15-fs);
     line-height: var(--body15-lh);
-    width: var(--width);
-    height: var(--height);
+    padding: 6px 12px;
     background: $c1-j;
     color: $c1-a;
     border-radius: 12px;
@@ -17,11 +14,6 @@ button{
     gap: 6px;
     border: none;
 
-
-    &.type-icon-left,
-    .type-icon-right{
-        --width:98px;
-    }
     &.type-icon-right{
         svg{
             transform: rotate(-90deg);
@@ -33,21 +25,11 @@ button{
 
 
     &.size-medium{
-        --width:84px;
-        --height:48px;
-        &.type-icon-left,
-        .type-icon-right{
-            --width:106px;
-        }
+        padding: 12px 16px;
     }
 
     &.size-large{
-        --width:148px;
-        --height:56px;
-        &.type-icon-left,
-        .type-icon-right{
-            --width:170px;
-        }
+        padding: 16.5px 48px;
     }
     
     &.color-bright{
@@ -71,6 +53,7 @@ button{
 
     &.color-stroke{
         border: 2px solid $c2-c;
+        background-color: transparent;
         svg{
             path{
                 stroke: $c2-b;
