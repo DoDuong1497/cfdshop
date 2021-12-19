@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowDown, BrandName } from '../icon'
 
 export default function HeaderMain() {
     return (
         <div className='header__main'>
             <div className="header__main-logo">
-            <BrandName />
+                <Link to='/'>
+                    <BrandName />   
+                </Link>
             </div>
             <div className="header__main-search">
                 <div className="main-search__left">
