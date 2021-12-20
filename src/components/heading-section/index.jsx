@@ -1,15 +1,16 @@
 import React from 'react'
 import Button from '../button'
 import { ArrowDown } from '../icon'
+import './style.scss'
 
-export default function QuoteHeader({children}) {
+export default function HeadingSection({heading, children}) {
     return (
-        <div className="quote-header">
+        <div className="headingSection">
             <div className="container">
-                <div className="quote-header__wrap">
-                    <h4 className="heading --h4">{children}</h4>
+                <div className="headingSection__wrap">
+                    <h4 className="heading --h4">{heading}</h4>
                     <Button type="icon-right">
-                        Button
+                        {children}
                         <ArrowDown size="16"/>
                     </Button>
                 </div>

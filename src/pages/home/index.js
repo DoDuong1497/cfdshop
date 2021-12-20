@@ -1,4 +1,5 @@
 import React from 'react'
+import Blog from '../../components/blog'
 import Quote from '../../components/quote'
 import BannerSection from './bannerSection'
 import Productwcate from './productwcate'
@@ -11,6 +12,7 @@ export default function Home() {
             <Productwcate header='Best selling products'/>
             <Productwcate header='Best from Farmers'/>
             <Quote />
+            <Blog />
         </>
     )
 }

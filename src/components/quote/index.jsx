@@ -1,12 +1,12 @@
 import React from 'react'
-import QuoteHeader from './quoteHeader'
+import HeadingSection from '../heading-section'
 import QuoteScroll from './quoteScroll'
 import QuoteSimple from './quoteSimple'
 
 export default function Quote() {
     return (
         <section className="section-quote quote">
-            <QuoteHeader>Section Headline</QuoteHeader>
+            <HeadingSection heading="Section Headline">Button</HeadingSection>
             <QuoteSimple />
         </section>
     )
