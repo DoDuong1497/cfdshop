@@ -1,10 +1,12 @@
 @import '../../assets/css/style.scss';
 
 .quote-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3.6rem;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.6rem;
+    }
 }
 
 .quote-simple{
