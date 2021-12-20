@@ -6,11 +6,11 @@ import './style.scss'
 
 export default function Home() {
     return (
-        <div className='container'>
+        <>
             <BannerSection/>
             <Productwcate header='Best selling products'/>
             <Productwcate header='Best from Farmers'/>
             <Quote />
-        </div>
+        </>
     )
 }
