@@ -1,6 +1,7 @@
 import React from 'react'
 import Blog from '../../components/blog'
 import Quote from '../../components/quote'
+import SliderQuote from '../../components/quote/sliderQuote'
 import BannerSection from './bannerSection'
 import Productwcate from './productwcate'
 import './style.scss'
