@@ -1,5 +1,9 @@
 @import '../../assets/css/style.scss';
-
+.slider{
+    button:before{
+        color: #000;
+    }
+}
 .quote-simple{
 
     &__wrap{
