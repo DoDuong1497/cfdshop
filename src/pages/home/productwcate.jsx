@@ -12,10 +12,12 @@ export default function Productwcate({header}) {
 ]
     return (
         <section className='productwcate'>
-            <Category header={header} button='More products'/>
+            <div className="container">
+                 <Category header={header} button='More products'/>
                 <Product price={price.map(price => price.price)}/>
                 <Product price={price.map(price => price.price)} discount='- 36 %'/>
                 <Product price={price.map(price => price.price)} discount='- 36 %'/>
+            </div>
         </section>
     )
 }

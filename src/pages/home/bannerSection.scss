@@ -1,7 +1,9 @@
 .bannerSection{
-    display: flex;
-    gap: 32px;
-    .banner{
-        width: 419px;
+    .container{
+        display: flex;
+        gap: 32px;
+        .banner{
+            width: 419px;
+        }
     }
 }
