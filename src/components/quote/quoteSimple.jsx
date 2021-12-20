@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import QuoteItem from './quoteItem'
 import img from '../../assets/img/quote-avt.jpg'
 import './style.scss'
@@ -16,3 +16,5 @@ export default function QuoteSimple() {
         </div>
     )
 }
+
+

@@ -11,16 +11,17 @@ export default function BlogPost({type = "small", urlBlog = "#", titleBlog, auth
                     <img src={urlBlogImg} alt="" />
                 </div>
                 <div className="blog-post__content">
-                    <h3 className="blog-post__title heading --h3">{titleBlog}</h3>
+                    {type === "medium" ? <div className="blog-post__tag">{tag}</div> : ""}
+                    <h3 className="blog-post__title heading">{titleBlog}</h3>
                     <div className="blog-post__info">
                         <div className="author">
-                            <img className="author__avt" src={urlAuthorImg} alt="" />
+                            {type === "large" ? <img className="author__avt" src={urlAuthorImg} alt="" /> : ""}
                             <p className="author__name">{authorName}</p>
                         </div>
                         <p className="date">{date}</p>
                     </div>
                 </div>
-                <div className="blog-post__tag">{tag}</div>
+                {type === "large" ? <div className="blog-post__tag">{tag}</div> : ""}
             </a>
         </div>
     )
