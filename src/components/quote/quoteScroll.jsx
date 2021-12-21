@@ -29,6 +29,7 @@ export default class QuoteScroll extends Component {
         slidesToScroll: 1,
         className: "center",
         centerMode: true,
+        variableWidth: true
       };
 
       return (
@@ -40,19 +41,19 @@ export default class QuoteScroll extends Component {
               </button>
 
               <Slider ref={c => (this.slider = c)} {...settings}>
-                  <div>
+                  <div style={{ width: 369 }}>
                       <QuoteItem name="Name and Surname" avatarUrl={img}>This is an super space for your customers qoute. Dont worry it works smooth as pie. You will get all what you need by writiing a text here 1</QuoteItem>
                   </div>
-                  <div>
+                  <div style={{ width: 369 }}>
                       <QuoteItem name="Name and Surname" avatarUrl={img}>This is an super space for your customers qoute. Dont worry it works smooth as pie. You will get all what you need by writiing a text here 2</QuoteItem>
                   </div>
-                  <div>
+                  <div style={{ width: 369 }}>
                       <QuoteItem name="Name and Surname" avatarUrl={img}>This is an super space for your customers qoute. Dont worry it works smooth as pie. You will get all what you need by writiing a text here 3</QuoteItem>
                   </div>
-                  <div>
+                  <div style={{ width: 369 }}>
                       <QuoteItem name="Name and Surname" avatarUrl={img}>This is an super space for your customers qoute. Dont worry it works smooth as pie. You will get all what you need by writiing a text here 4</QuoteItem>
                   </div>
-                  <div>
+                  <div style={{ width: 369 }}>
                       <QuoteItem name="Name and Surname" avatarUrl={img}>This is an super space for your customers qoute. Dont worry it works smooth as pie. You will get all what you need by writiing a text here 5</QuoteItem>
                   </div>
               </Slider>
