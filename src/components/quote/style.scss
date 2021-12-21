@@ -1,16 +1,25 @@
 @import '../../assets/css/style.scss';
 
-/* the parent */
-.slick-list {
-    margin: 0 -16px;
+.slider{
+    button:before{
+        color: #000;
+    }
 }
-
+.slick-slide {
+    margin: 0 16px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -16px;
+  }
 .quote-simple{
+
     &__wrap{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    
 }
 
 .quote-scroll{
@@ -44,7 +53,7 @@
 .quote-item{
     position: relative;
     padding-bottom: calc(48px / 2);
-    margin: 0 calc(32px / 2);
+    // margin: 0 calc(32px / 2);
 
     &__wrap{
         width: 100%;
