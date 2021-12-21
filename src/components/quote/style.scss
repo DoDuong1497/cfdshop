@@ -15,11 +15,38 @@
     
 }
 
+.quote-scroll{
+    position: relative;
+
+    .btn{
+        padding: 0;
+        @include size(32px, 48px);
+        background-color: $c1-a;
+        border: none;
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        z-index: 1;
+
+        &-prev{
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            left: 0;
+        }
+
+        &-next{
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            right: 0;
+        }
+    }
+}
+
 
 .quote-item{
     position: relative;
-    max-width: 36.9rem;
     padding-bottom: calc(48px / 2);
+    margin: 0 calc(32px / 2);
 
     &__wrap{
         width: 100%;
