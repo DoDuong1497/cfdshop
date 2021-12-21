@@ -29,7 +29,8 @@ export default class QuoteScroll extends Component {
         slidesToScroll: 1,
         className: "center",
         centerMode: true,
-        variableWidth: true
+        variableWidth: true,
+        adaptiveHeight:true
       };
 
       return (
