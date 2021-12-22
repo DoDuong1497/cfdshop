@@ -1,9 +1,9 @@
 import React from 'react'
-import Category from '../../components/category'
-import Product from '../../components/product'
-import './productwcate.scss'
+import Category from '../category'
+import Product from '../product'
+import './productWCate.scss'
 
-export default function Productwcate({header}) {
+export default function ProductWCate({header}) {
     const price = [
     {
         price: '1.48'

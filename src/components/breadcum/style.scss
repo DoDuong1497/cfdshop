@@ -1,0 +1,18 @@
+@import '../../assets/css/style.scss';
+.breadcum{
+    padding: 16px 0;
+    p{
+        display: inline-block
+    }
+    .line{
+        @include cap-d;
+        margin: 0 8px;
+    }
+    .prev{
+        @include cap-d;
+        color: $c1-c;
+    }
+    .current{
+        @include cap-d
+    }
+}
