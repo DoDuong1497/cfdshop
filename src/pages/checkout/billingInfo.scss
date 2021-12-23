@@ -1,0 +1,15 @@
+@import '../../assets/css/style.scss';
+
+.billing__info{
+    &-wrap{
+        display: flex;
+        gap: 32px;
+        margin-top: 32px;
+    }
+    &-left,
+    &-right{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
