@@ -1,0 +1,35 @@
+@import '../../assets/css/style.scss';
+
+.input__wrap{
+    label{
+        @include s6;
+    }
+    .input{
+        padding: 10px 16px 11px 21px;
+        border: 1px solid $c1-d;
+        border-radius: 12px;
+        width: 120px;
+        input{
+            width: 100%;
+            border: none;
+            padding: unset;
+            height: 100%;
+            &::placeholder{
+                @include body-d;
+                color: $c1-c;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        &.size-medium{
+            width: 319px;
+        }
+        &.size-large{
+            width: 350px;
+        }
+        &.size-xLarge{
+            width: 638px;
+        }
+    }
+}
