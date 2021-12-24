@@ -1,0 +1,70 @@
+@import '../../assets/css/style.scss';
+
+.checkbox-wrap{
+    padding: 9px 16px;
+    border: 1px solid $c1-d;
+    border-radius: 12px;
+    background-color: $c1-j;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    .checkbox{
+        display: block;
+        position: relative;
+        height: 24px;
+        width: 24px;
+        padding-left: 30px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #fff;
+            border: 1.5px solid $c1-d;
+            border-radius: 2px;
+        }
+        &:hover span{
+            background-color: #ccc;
+        }
+        input:checked ~ span{
+            background-color: $c2-a;
+            border: 1.5px solid $c2-b;
+        }
+        span:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        input:checked ~ span:after {
+            display: block;
+     }
+          
+        span:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+    }
+    p{
+        color: $c1-b;
+    }
+}

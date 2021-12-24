@@ -1,5 +1,7 @@
 import React from 'react'
+import Checkbox from '../../components/checkbox'
 import Input from '../../components/input'
+import Select from '../../components/select'
 import BillingHeader from './billingHeader'
 import './billingInfo.scss'
 
@@ -12,7 +14,8 @@ export default function BillingInfo() {
                     <Input label='First Name' placeholder='First name' size='medium'/>
                     <Input label='Email address' placeholder='Email address' size='medium'/>
                     <Input label='Address' placeholder='Address' size='medium'/>
-                    <Input label='State / Country' placeholder='State / Country' size='medium'/>
+                    <Select label='State / Country' placeholder='State / Country'/>
+                    <Checkbox text='Ship to a different address?' />
                 </div>
                 <div className="billing__info-right">
                     <Input label='Last Name' placeholder='Last name' size='medium'/>
