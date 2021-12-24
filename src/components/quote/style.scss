@@ -34,7 +34,10 @@
         top: 50%;
         @include transform(translateY(-50%));
         z-index: 1;
-
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &-prev{
             border-top-right-radius: 12px;
             border-bottom-right-radius: 12px;
@@ -46,6 +49,12 @@
             border-bottom-left-radius: 12px;
             right: 0;
         }
+    &:hover{
+        background-color: #f1f1f1;
+        svg{
+            mix-blend-mode: difference;
+        }
+    }
     }
 }
 

@@ -1,0 +1,16 @@
+@import '../../assets/css/style.scss';
+
+.billing__header{
+    h2{
+        @include s3;
+    }
+
+    .header__desc{
+        display: flex;
+        justify-content: space-between;
+        p{
+            @include cap-d;
+            color: $c1-d;
+        }
+    }
+}
