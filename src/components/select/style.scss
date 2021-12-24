@@ -1,0 +1,22 @@
+@import '../../assets/css/style.scss';
+
+.select{
+    label{
+        @include s6;
+    }
+    .textfield{
+        padding: 10px 16px 11px 21px;
+        border: 1px solid $c1-d;
+        border-radius: 12px;
+        width: 319px;
+        background-color: $c1-h;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    p{
+        @include body-d;
+        color: $c1-c;
+    }
+    }
+}
