@@ -1,0 +1,46 @@
+@import '../../assets/css/style.scss';
+
+.checkRadio{
+    display: flex;
+    align-items: center;
+
+    &-wrap{
+        line-height: 1;
+    }
+
+    .name-transport{
+        margin-left: 1.6rem;
+    }
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-label {
+    @include size(2rem);
+    @include br(50%);
+    background-color: $c1-j;
+    border: 1.5px solid #D1D1D1;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    position: relative;
+}
+
+.radio-input{
+    &:checked{
+        + .radio-label{
+            background-color: $c2-a;
+
+            &::after{
+                content: "";
+                display: inline-block;
+                @include size(1rem);
+                @include br(50%);
+                background-color: #fff;
+                @include mid();
+            }
+        }
+    }
+}
