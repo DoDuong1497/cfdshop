@@ -2,11 +2,12 @@
 
 .billing__info{
     margin-top: 16px;
+
     &-wrap{
         display: flex;
         gap: 32px;
-        margin-top: 32px;
     }
+
     &-left,
     &-right{
         display: flex;
