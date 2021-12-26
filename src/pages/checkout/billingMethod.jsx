@@ -24,12 +24,12 @@ export const TransportersLogo = ({urlLogo}) => {
 
 export default function BillingMethod() {
     return (
-        <div className='billingMethod'>
+        <div className='billingMethod mr-bt'>
             <BillingHeader header='Billing method' desc='Please enter your payment method' paging='2'/>
 
             <div className="billingMethod__wrap">
                 <div className="billingMethod__item">
-                    <CheckRadio idRadio="shipFedEx" nameTransport="FedEx" name="shipUnit"/>
+                    <CheckRadio idRadio="shipFedEx" nameRadio="FedEx" name="shipUnit"/>
                     <div className="price">
                         <PriceNumber>+32 USD</PriceNumber>
                         <span className="price__additional">Additional price</span>
@@ -38,7 +38,7 @@ export default function BillingMethod() {
                 </div>
 
                 <div className="billingMethod__item">
-                    <CheckRadio idRadio="shipDHL" nameTransport="DHL" name="shipUnit"/>
+                    <CheckRadio idRadio="shipDHL" nameRadio="DHL" name="shipUnit"/>
                     <div className="price">
                         <PriceNumber>+16 USD</PriceNumber>
                         <span className="price__additional">Additional price</span>

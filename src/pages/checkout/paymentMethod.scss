@@ -1,0 +1,48 @@
+@import '../../assets/css/style.scss';
+
+.paymentMethod{
+    &__item{
+        background-color: $c1-h;
+        border-radius: 12px;
+        border: 1px solid $c1-d;
+        margin-bottom: 1.6rem;
+        padding: 16px;
+    }
+
+    &__header{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: ps;
+        font-size: 1.2rem;
+        
+
+        .payment-img{
+            line-height: 0;
+        }
+    }
+
+    &__form{
+        width: 100%;
+        min-height: 152px;
+        margin-top: 3.2rem;
+
+        > .input__wrap{
+            margin-bottom: 32px;
+        }
+
+        .card-info{
+            display: flex;
+            justify-content: space-between;
+
+            &__item{
+                &:last-child{
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 16px;
+                }
+            }
+        }
+    }
+}

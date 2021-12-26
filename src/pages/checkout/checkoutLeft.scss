@@ -1,5 +1,13 @@
+@import '../../assets/css/style.scss';
+
 .checkout{
     &-left{
         width: 57%;
+
+        .mr-bt{
+            --mr-bt: 6.4rem;
+
+            margin-bottom: var(--mr-bt);
+        }
     }
 }

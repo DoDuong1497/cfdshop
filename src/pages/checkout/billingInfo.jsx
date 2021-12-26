@@ -7,7 +7,7 @@ import './billingInfo.scss'
 
 export default function BillingInfo() {
     return (
-        <div className='billing__info'>
+        <div className='billing__info mr-bt'>
             <BillingHeader header='Billing Info' desc='Please enter your billing info' paging='1'/>
             <div className="billing__info-wrap">
                 <div className="billing__info-left">
