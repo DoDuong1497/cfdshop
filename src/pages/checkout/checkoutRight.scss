@@ -1,5 +1,19 @@
+@import '../../assets/css/style.scss';
+
 .checkout{
     &-right{
         width: 43%;
+        padding: 32px 16px;
+        border: 1px solid $c1-d;
+        border-radius: 12px;
+        .billing__header{
+            margin-bottom: 4rem;
+        }
+        &-product{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 4rem;
+        }
     }
 }

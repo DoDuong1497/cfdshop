@@ -10,6 +10,8 @@
         border-radius: 12px;
         width: 120px;
         background-color: $c1-j;
+        display: flex;
+        align-items: center;
         input{
             width: 100%;
             border: none;
@@ -32,6 +34,29 @@
         }
         &.size-xLarge{
             width: 638px;
+        }
+        &.select{
+            width: 118px;
+            padding: 6px 7px;
+            .input__select{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                cursor: pointer;
+                position: relative;
+                p{
+                    @include s6;
+                }
+                &::before{
+                    content: '';
+                    display: block;
+                    height: 20px;
+                    width: 1px;
+                    background-color: #D1D1D1;
+                    position: absolute;
+                    left: -16px;
+                }
+            }
         }
     }
 }

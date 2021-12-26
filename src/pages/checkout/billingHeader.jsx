@@ -7,7 +7,7 @@ export default function BillingHeader({header, desc, paging}) {
          <h2>{header}</h2>
          <div className="header__desc">
              <p>{desc}</p>
-             <p>Step {paging} of 5</p>
+             {paging ? <p>Step {paging} of 5</p> : ''}
          </div>
         </div>
     )
