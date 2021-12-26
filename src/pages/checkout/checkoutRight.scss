@@ -1,8 +1,9 @@
 @import '../../assets/css/style.scss';
 
 .checkout{
-    &-right{
+    &__right{
         width: 43%;
+        height: fit-content;
         padding: 32px 16px;
         border: 1px solid $c1-d;
         border-radius: 12px;
@@ -14,6 +15,49 @@
             flex-direction: column;
             gap: 32px;
             margin-bottom: 4rem;
+        }
+        &-fee{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+            .fee__item{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    @include s6;
+                }
+            }
+        }
+        & > .input__wrap{
+            width: 100%;
+            margin-bottom: 40px;
+            .input{
+                width: 100%;
+            }
+            .button{
+                min-width: 106px;
+            }
+        }
+        &-total{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .total-left{
+                h6{
+                    @include s6;
+                }
+                p{
+                    @include cap-d;
+                    color: $c2-a;
+                }
+            }
+            .total-right{
+                h2{
+                    @include s2;
+                    color: $c2-a;
+                }
+            }
         }
     }
 }
