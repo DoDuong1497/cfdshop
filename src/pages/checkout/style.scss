@@ -1,9 +1,10 @@
 @import '../../assets/css/style.scss';
 
 .checkout{
-    &__wrap{
-        display: flex;
-        justify-content: space-between;
-        column-gap: 32px;
-    }
+        &__wrap{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 32px;
+            margin-top: 16px;
+        }
 }
