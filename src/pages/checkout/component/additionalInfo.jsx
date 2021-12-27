@@ -1,7 +1,7 @@
 import React from 'react'
 import BillingHeader from './billingHeader'
 import './additionalInfo.scss'
-import Button from '../../components/button'
+import Button from '../../../components/button'
 
 export default function AdditionalInfo() {
     return (
