@@ -16,6 +16,8 @@ export default function Confirmation() {
                     <Checkbox text='I agree with our terms and conditions and privacy policy.' />
                 </div>
 
+                <Button color='colored' size='small'>Submit</Button>
+
                 <Button color='colored' size='large'>Complete order</Button>
 
                 <div className="safe-group">
@@ -28,6 +30,7 @@ export default function Confirmation() {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
