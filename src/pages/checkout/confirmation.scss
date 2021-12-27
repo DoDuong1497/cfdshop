@@ -1,0 +1,41 @@
+@import '../../assets/css/style.scss';
+
+.confirmation{
+    &-wrap{
+        .confirmation-check,
+        button{
+            margin-bottom: 32px;
+        }
+    }
+
+    &-check{
+        .checkbox-wrap{
+            margin-bottom: 16px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .safe-group{
+        max-width: 21.3rem;
+
+        &__icon{
+            margin-bottom: 8px;
+        }
+
+        &__content{
+            font-size: 1.2rem;
+        }
+
+        &__title{
+            font-family: ps;
+            line-height: 1.8rem;
+        }
+
+        &__text{
+            color: $c1-c;
+        }
+    }
+}

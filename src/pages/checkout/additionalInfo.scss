@@ -1,0 +1,25 @@
+@import '../../assets/css/style.scss';
+
+.additionalInfo{
+    &-wrap{
+        label{
+            display: block;
+            font-family: "ps";
+            font-size: var(--h6-fs);
+            line-height: var(--h6-lh);
+        }
+
+        #orderNote{
+            width: 100%;
+            resize: none;
+            padding: 11px 21px;
+            border: 1px solid #D1D1D1;
+            border-radius: 12px;
+            background-color: #FDFDFD;
+
+            &::placeholder{
+                color: $c1-c;
+            }
+        }
+    }
+}
