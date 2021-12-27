@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../../components/button'
-import Checkbox from '../../components/checkbox'
-import { SafeIcon } from '../../components/icon'
+import Button from '../../../components/button'
+import Checkbox from '../../../components/checkbox'
+import { SafeIcon } from '../../../components/icon'
 import BillingHeader from './billingHeader'
 import './confirmation.scss'
 
