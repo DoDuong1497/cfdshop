@@ -24,6 +24,8 @@ export default function BillingInfo() {
                     <Input label='ZIP/Postal code' placeholder='Postal code or ZIP' size='medium'/>
                 </div>
             </div>
+
+            <Button color='colored' size='small'>Submit</Button>
         </div>
     )
 }

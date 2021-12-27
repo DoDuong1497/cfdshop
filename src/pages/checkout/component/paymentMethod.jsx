@@ -6,6 +6,7 @@ import imgPaypal from '../../../assets/img/paypal-img.svg'
 import imgBitcoin from '../../../assets/img/bitcoin-img.svg'
 import './paymentMethod.scss'
 import Input from '../../../components/input'
+import Button from '../../../components/button'
 
 
 export const PaymentImage = ({urlImg}) => {
@@ -61,6 +62,8 @@ export default function PaymentMethod() {
                     </div>
                 </div>
             </div>
+
+            <Button color='colored' size='small'>Submit</Button>
         </div>
     )
 }
