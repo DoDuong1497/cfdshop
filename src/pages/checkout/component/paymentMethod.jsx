@@ -1,12 +1,12 @@
 import React from 'react'
-import CheckRadio from '../../components/radio'
+import CheckRadio from '../../../components/radio'
 import BillingHeader from './billingHeader'
-import imgCredit from '../../assets/img/credit-img.svg'
-import imgPaypal from '../../assets/img/paypal-img.svg'
-import imgBitcoin from '../../assets/img/bitcoin-img.svg'
+import imgCredit from '../../../assets/img/credit-img.svg'
+import imgPaypal from '../../../assets/img/paypal-img.svg'
+import imgBitcoin from '../../../assets/img/bitcoin-img.svg'
 import './paymentMethod.scss'
-import Input from '../../components/input'
-import Button from '../../components/button'
+import Input from '../../../components/input'
+import Button from '../../../components/button'
 
 
 export const PaymentImage = ({urlImg}) => {

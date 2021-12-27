@@ -1,8 +1,7 @@
 import React from 'react'
-import imgDhl from '../../assets/img/logo-transport-dhl.svg'
-import imgFed from '../../assets/img/logo-transport-fedex.svg'
-import Button from '../../components/button'
-import CheckRadio from '../../components/radio'
+import imgDhl from '../../../assets/img/logo-transport-dhl.svg'
+import imgFed from '../../../assets/img/logo-transport-fedex.svg'
+import CheckRadio from '../../../components/radio'
 import BillingHeader from './billingHeader'
 import './billingMethod.scss'
 
