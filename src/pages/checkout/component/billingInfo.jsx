@@ -10,9 +10,8 @@ import './billingInfo.scss'
 
 export default function BillingInfo() {
     const {register, handleSubmit, error, form, setForm} = useForm()
-    handleSubmit()
     const submit = () =>{
-        console.log('aaa')
+        console.log('submit')
     }
     return (
         <div className='billing__info mr-bt'>
@@ -20,9 +19,9 @@ export default function BillingInfo() {
             <form onSubmit={handleSubmit(submit)}>
             <div className="billing__info-wrap">
                 <div className="billing__info-left">
-                    <Input valid={register('firstname', {required : true})} label='First Name' placeholder='First name' size='medium'/>
-                    <Input label='Email address' placeholder='Email address' size='medium'/>
-                    <Input label='Address' placeholder='Address' size='medium'/>
+                    <Input valid={register('firstname', {required : true})} error={error.firstname} label='First Name' placeholder='First name' size='medium'/>
+                    <Input valid={register('email', {required : true, pattern : 'email'})} error={error.email} label='Email address' placeholder='Email address' size='medium'/>
+                    <Input valid={register('address', {required : true})} error={error.address} label='Address' placeholder='Address' size='medium'/>
                     <Select label='State / Country' placeholder='State / Country'/>
                     <Checkbox text='Ship to a different address?' />
                 </div>
