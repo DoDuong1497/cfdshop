@@ -2,9 +2,9 @@ import React from 'react'
 import classNames from 'classnames';
 import './style.scss'
 
-export default function Button({children, color='simple',type='default', size='small', icon}) {
+export default function Button({children, color='simple',type='default', size='small', icon, typebutton=''}) {
     return (
-        <button className={
+        <button type={typebutton} className={
             classNames('button',`color-${color}`,`type-${type}`,`size-${size}`)
             }>
             {type === 'icon-left' && icon}
