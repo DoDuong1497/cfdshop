@@ -30,11 +30,23 @@ export default function useForm() {
     const validate = () => {
         let errorObj = {}
         if(Object.keys(rules).length > 0){
-            for(let name of rules){
-                const r = rules[name]
+        for(let i in rules){
+                const r = rules[i]
     
-                if(r.required && !form[name]){
-                    errorObj[name] = `${name} không được bỏ trống`
+                if(r.required && !form[i]){
+                    errorObj[i] = `${i} không được bỏ trống`
+                    continue
+                }
+
+                if(r.pattern){
+                    let pattern = r.pattern
+                    if(pattern === 'email'){
+                        pattern = emailRegexp
+                    }
+
+                    if(!pattern.test(form[i])){
+                        errorObj[i] = `${i} không đúng định dạng`
+                    }
                 }
             }
         }
@@ -46,7 +58,6 @@ export default function useForm() {
     const handleSubmit = (submitFunc)=>{
         return (ev) =>{
             ev.preventDefault()
-            console.log('handlesubmit')
             const errorObj = validate()
             if(Object.keys(errorObj).length === 0){
                 submitFunc(form)

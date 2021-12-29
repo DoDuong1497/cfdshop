@@ -3,7 +3,7 @@ import React from 'react'
 import { ArrowDown } from '../icon'
 import './style.scss'
 
-export default function Input({children, label, placeholder, size, max='50', select, selectText, valid}) {
+export default function Input({children, label, placeholder, size, max='50', select, selectText, valid, error}) {
     return (
         <div className='input__wrap'>
             <label>{label}</label>
@@ -17,6 +17,7 @@ export default function Input({children, label, placeholder, size, max='50', sel
                 </div>
                 :''}
             </div>
+            <p className='input__error'>{error}</p>
         </div>
     )
 }
