@@ -3,12 +3,12 @@ import React from 'react'
 import { ArrowDown } from '../icon'
 import './style.scss'
 
-export default function Input({children, label, placeholder, size, max='50', select, selectText}) {
+export default function Input({children, label, placeholder, size, max='50', select, selectText, valid}) {
     return (
         <div className='input__wrap'>
             <label>{label}</label>
             <div className={classNames('input', `size-${size}`, `${select ? 'select' : ''}`)}>
-                <input type="text" placeholder={placeholder} maxlength={max}/>
+                <input type="text" placeholder={placeholder} maxlength={max} {...valid}/>
                 {children}
                 {select ?
                 <div className="input__select">
