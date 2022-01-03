@@ -10,16 +10,17 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <MainLayout>
-        <Routes>
+      <Routes >
+        <Route path='/' element={<MainLayout/>}>          
             <Route index element={<Home/>}></Route>
             <Route path='blog' element={<Home/>}></Route>
             <Route path='aboutus' element={<Home/>}></Route>
             <Route path='caterogy' element={<Home/>}></Route>
             <Route path='checkout' element={<Checkout/>}></Route>
-            <Route path='login' element={<Login/>}></Route>
-        </Routes>
-      </MainLayout>
+        </Route>
+            <Route path='/login' element={<Login/>}></Route>
+      </Routes>
+     
       </BrowserRouter>
     </div>
   );
