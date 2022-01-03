@@ -70,7 +70,8 @@ export default function useForm() {
         handleSubmit,
         error,
         form,
-        setForm
+        setForm,
+        validate
     }
 }
 
