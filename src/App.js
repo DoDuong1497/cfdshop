@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./assets/css/style.scss";
-import Login from "./components/login";
+import Login from "./pages/login";
 import MainLayout from "./layout/mainlayout";
 import Checkout from "./pages/checkout";
 import Home from "./pages/home";

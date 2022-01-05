@@ -1,5 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useRef } from 'react'
-import Button from '../../../components/button'
+import React, { forwardRef, useImperativeHandle, useState } from 'react'
 import Checkbox from '../../../components/checkbox'
 import Input from '../../../components/input'
 import Select from '../../../components/select'
@@ -26,7 +25,7 @@ export const BillingInfo = forwardRef((props, ref) => {
                     <Input valid={register('firstname', {required : true})} error={error.firstname} label='First Name' placeholder='First name' size='medium'/>
                     <Input valid={register('email', {required : true, pattern : 'email'})} error={error.email} label='Email address' placeholder='Email address' size='medium'/>
                     <Input valid={register('address', {required : true})} error={error.address} label='Address' placeholder='Address' size='medium'/>
-                    <Select label='State / Country' placeholder='State / Country'/>
+                    <Select label='State / Country' />
                     <Checkbox text='Ship to a different address?' />
                 </div>
                 <div className="billing__info-right">

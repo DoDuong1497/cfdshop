@@ -47,8 +47,6 @@ export default function BillingMethod() {
                     <TransportersLogo urlLogo={imgDhl}/>
                 </div>
             </div>
-
-            <Button color='colored' size='small'>Submit</Button>
         </div>
     )
 }

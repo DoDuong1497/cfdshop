@@ -62,8 +62,6 @@ export default function PaymentMethod() {
                     </div>
                 </div>
             </div>
-
-            <Button color='colored' size='small'>Submit</Button>
         </div>
     )
 }

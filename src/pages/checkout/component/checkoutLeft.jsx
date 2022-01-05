@@ -18,9 +18,8 @@ export const CheckoutLeft = forwardRef((props, ref) => {
     const billinginforef = useRef()
     const billingInfo = () => {
 
-        const errorObj = billinginforef.current?.validate()
-
-        console.log(errorObj)
+        billinginforef.current?.validate()
+        console.log(billinginforef.current?.form)
     }
     return (
         <div className="checkout-left">
