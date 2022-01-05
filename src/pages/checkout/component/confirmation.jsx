@@ -15,9 +15,6 @@ export default function Confirmation() {
                     <Checkbox text='I agree with sending an Marketing and newsletter emails. No spam, promissed!' />
                     <Checkbox text='I agree with our terms and conditions and privacy policy.' />
                 </div>
-
-                <Button color='colored' size='small'>Submit</Button>
-
                 <Button color='colored' size='large'>Complete order</Button>
 
                 <div className="safe-group">

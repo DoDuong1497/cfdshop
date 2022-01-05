@@ -12,8 +12,6 @@ export default function AdditionalInfo() {
                 <label>Order notes</label>
                 <textarea name="note" id="orderNote" rows="10" placeholder="Need a specific delivery day? Sending a gitf? Let's say ..."></textarea>
             </div>
-
-            <Button color='colored' size='small'>Submit</Button>
         </div>
     )
 }

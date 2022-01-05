@@ -1,14 +1,18 @@
 import React from 'react'
-import Button from '../button'
-import Input from '../input'
-import useForm from '../useForm'
+import Button from '../../components/button'
+import Input from '../../components/input'
+import useForm from '../../components/useForm'
+import AuthService from '../../services/AuthService'
 
 export default function Login() {
     const {register, error, validate, form} = useForm()
+
     const submit = (ev) => {
         ev.preventDefault()
         validate()
+        AuthService.login(form)
     }
+
     return (
         <div className='container'>
             <form>
